@@ -1,2 +1,6 @@
 # hello-world
-A hello-world repository
+
+Hey Humans!
+
+This is Maggie, interested in Math and Origami.
+
