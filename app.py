@@ -2,7 +2,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def hello_name():
+def render_homepage():
    return 'Hello! This is Maggie\'s Homepage'
 
 @app.route('/hello/<name>')
