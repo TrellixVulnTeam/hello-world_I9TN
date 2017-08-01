@@ -43,7 +43,7 @@ def render_game_event(id, event):
     elif event == events[2]:
         next = [events[1], events[3], "", ""]
     elif event == events[3]:
-        next = [events[2], events[4], "", ""]
+        next = [events[1], events[2], events[4], ""]
     elif event == events[4]:
         next = [events[5], "", "", ""]
     elif event == events[5]:
