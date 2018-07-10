@@ -9,7 +9,7 @@ events = {
     -1: '任务板',
     0: '新手村',
     1: '隔壁村子',
-    2: '商店呀', 
+    2: '商店呀',
     3: '野外',
     4: '龙谷呀',
     5: '不存在的'
@@ -33,7 +33,7 @@ def render_game(id):
 
 @app.route('/game/<id>/<event>')
 def render_game_event(id, event):
-    
+
     if event == events[-1]:
         next = [events[1], "", "", ""]
     elif event == events[0]:
@@ -49,6 +49,10 @@ def render_game_event(id, event):
     elif event == events[5]:
         next = [events[-1], "", "", ""]
     return render_template('game.html', id=id, title=id_game[int(id)], next=next)
+
+@app.route('/origami')
+def render_origami():
+    return render_template('origami.html')
 
 if __name__ == '__main__':
    app.run(debug = True)
