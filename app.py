@@ -54,5 +54,9 @@ def render_game_event(id, event):
 def render_origami():
     return render_template('origami.html')
 
+@app.route('/maths')
+def render_maths():
+    return render_template('maths.html')
+
 if __name__ == '__main__':
    app.run(debug = True)
