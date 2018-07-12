@@ -58,5 +58,9 @@ def render_origami():
 def render_maths():
     return render_template('maths.html')
 
+@app.route('/maths/PDF/Y4Pjt')
+def render_maths():
+    return render_PDF('Y4Pjt.pdf')
+
 if __name__ == '__main__':
    app.run(debug = True)
